@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <!-- 开启响应式 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- iphone设备中的safari私有meta标签,允许全屏模式浏览 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <!-- 忽略将页面中的数字识别为电话号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 忽略Android平台中对邮箱地址的识别 -->
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+    <script type="text/javascript">
+    (function() {
+        var b = document.documentElement;
+        var a = document.createElement("style");
+        a.innerHTML = "html { font-size: " + ((b.clientWidth > 640 ? 640 : b.clientWidth) / 18.75) + "px !important; }";
+        b.firstElementChild.appendChild(a)
+    })();
+    </script>
+</head>
+
+<body class="body">
+    <div class="viewport">
+        <header class="header">
+            <img src="../static/images/logo.png" class="logo">
+        </header>
+        <section class="login_box">
+            <input type="text" name="" class="username" placeholder="请输入用户名" />
+            <input type="password" name="" class="password" placeholder="请输入密码">
+            <a href="javascript:;" class="login_btn">登录</a>
+    </div>
+    </section>
+    </div>
+    <script src="http://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+</body>
+
+</html>
+<!-- <script src="../static/js/lib/rem.js"></script> -->

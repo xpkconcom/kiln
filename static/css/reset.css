@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*cssreset*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 100px;
+}
+
+body {
+    font-family: Microsoft Yahei, Hiragino Sans GB, Arial, Helvetica, "微软雅黑", "宋体", sans-serif;
+    font-size: 1.2rem;
+    background-color: #efeff4;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    color: #f9f9fa;
+    max-width: 640px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+
+.body{
+	height: 100%;
+	background: url(../images/loginbg.png)no-repeat;
+	background-size: cover;
+}
+.viewport {
+    position: relative;
+}
+.header{
+	
+	width: 13.2rem;
+	margin: 0 auto;
+}
+.logo{
+	margin-top:3.4rem;
+	width: 13.2rem;
+}
+.login_box{
+	width: 90%;
+	margin: 2.3rem auto;
+	position: relative;
+	
+}
+.login_box input{
+	width: 100%;
+	height: 2.5rem;
+	border-radius:5px;
+	border:1px solid #666;
+	outline: none;
+	font-size: 0.9rem;
+	line-height: 2.5rem;
+	text-indent: 1.9rem;
+
+}
+.username{
+	background: url(../images/icon_ren.png)no-repeat;
+	background-position: 0.4rem 0.7rem;
+	background-size: 1rem 1rem;
+}
+.icon_ren{
+	display: block;
+	position: absolute;
+	top: 0;left: 0;
+	width: 0.9rem;
+	height: 0.9rem;
+	z-index: 33;
+}
+.password{
+	background: url(../images/icon_password.png)no-repeat;
+	background-position: 0.4rem 0.7rem;
+	background-size: 1rem 1rem;
+	margin-top: 1.2rem;
+
+}
+.login_btn{
+	width: 100%;
+	height: 2.3rem;
+	line-height: 2.3rem;
+	border: 2px solid #609df0;
+	border-radius: 3px;
+	text-align: center;
+	color: #609df0;
+	font-size: 0.9rem;
+	display: block;
+	margin-top: 2.1rem;
+}
+.login_btn:hover{
+	background: #609df0; 
+	color: #fff;
+}
+
+/*login start*/
+
+
+/*login end*/
