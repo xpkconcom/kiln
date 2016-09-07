@@ -136,6 +136,12 @@ a:hover {
     text-decoration: none;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
 html {
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: transparent;
@@ -149,82 +155,99 @@ body {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     color: #f9f9fa;
-    max-width: 640px;
-    overflow-x: hidden;
+}
+
+.body {
+    height: 100%;
+}
+
+.viewport {
+	height: 100%;
+}
+
+.bg {
+    position: relative;
+    background: url(../images/loginbg.png)no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .viewport {
+        max-width: 640px;
+        max-height: 100%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+}
+
+.header {
+    width: 13.2rem;
     margin: 0 auto;
 }
 
-
-.body{
-	height: 100%;
-	background: url(../images/loginbg.png)no-repeat;
-	background-size: cover;
+.logo {
+    margin-top: 3.4rem;
+    width: 13.2rem;
 }
-.viewport {
+
+.login_box {
+    width: 90%;
+    margin: 2.3rem auto;
     position: relative;
 }
-.header{
-	
-	width: 13.2rem;
-	margin: 0 auto;
-}
-.logo{
-	margin-top:3.4rem;
-	width: 13.2rem;
-}
-.login_box{
-	width: 90%;
-	margin: 2.3rem auto;
-	position: relative;
-	
-}
-.login_box input{
-	width: 100%;
-	height: 2.5rem;
-	border-radius:5px;
-	border:1px solid #666;
-	outline: none;
-	font-size: 0.9rem;
-	line-height: 2.5rem;
-	text-indent: 1.9rem;
 
+.login_box input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #666;
+    outline: none;
+    font-size: 0.9rem;
+    line-height: 2.5rem;
+    text-indent: 1.9rem;
 }
-.username{
-	background: url(../images/icon_ren.png)no-repeat;
-	background-position: 0.4rem 0.7rem;
-	background-size: 1rem 1rem;
-}
-.icon_ren{
-	display: block;
-	position: absolute;
-	top: 0;left: 0;
-	width: 0.9rem;
-	height: 0.9rem;
-	z-index: 33;
-}
-.password{
-	background: url(../images/icon_password.png)no-repeat;
-	background-position: 0.4rem 0.7rem;
-	background-size: 1rem 1rem;
-	margin-top: 1.2rem;
 
+.username {
+    background: url(../images/icon_ren.png)no-repeat;
+    background-position: 0.4rem 0.7rem;
+    background-size: 1rem 1rem;
 }
-.login_btn{
-	width: 100%;
-	height: 2.3rem;
-	line-height: 2.3rem;
-	border: 2px solid #609df0;
-	border-radius: 3px;
-	text-align: center;
-	color: #609df0;
-	font-size: 0.9rem;
-	display: block;
-	margin-top: 2.1rem;
+
+.icon_ren {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.9rem;
+    height: 0.9rem;
+    z-index: 33;
 }
-.login_btn:hover{
-	background: #609df0; 
-	color: #fff;
+
+.password {
+    background: url(../images/icon_password.png)no-repeat;
+    background-position: 0.4rem 0.7rem;
+    background-size: 1rem 1rem;
+    margin-top: 1.2rem;
 }
+
+.login_btn {
+    width: 100%;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    border: 2px solid #609df0;
+    border-radius: 3px;
+    text-align: center;
+    color: #609df0;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 2.1rem;
+}
+
+.login_btn:hover {
+    background: #609df0;
+    color: #fff;
+}
+
 
 /*login start*/
 
