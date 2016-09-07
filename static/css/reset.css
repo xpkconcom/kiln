@@ -250,8 +250,8 @@ body {
 .footer{
 	width: 7.5rem;
 	transform: translateX(-3.7rem);
-	position: absolute;
-	bottom: 1.5rem;
+	position: relative;
+	top: 3rem;
 	left: 50%;
 	text-align: center;
 	color: #808080;
