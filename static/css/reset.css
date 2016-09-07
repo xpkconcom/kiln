@@ -127,12 +127,10 @@ var {
 }
 
 a {
-    color: #333;
     text-decoration: none;
 }
 
 a:hover {
-    color: #333;
     text-decoration: none;
 }
 
@@ -163,6 +161,8 @@ body {
 
 .viewport {
 	height: 100%;
+    overflow-x: hidden;
+
 }
 
 .bg {
@@ -176,9 +176,11 @@ body {
         max-width: 640px;
         max-height: 100%;
         margin: 0 auto;
-        overflow: auto;
+        overflow-x: hidden;
     }
 }
+
+/*login start*/
 
 .header {
     width: 13.2rem;
@@ -266,10 +268,117 @@ body {
 	color: #999999;
 	text-decoration: underline;
 }
-.zindex{
-    z-index: -1;
-}
-/*login start*/
-
-
 /*login end*/
+
+/**
+ * index start
+ */
+.nav{
+    height: 2.5rem;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background: #609df0;
+    color: 0.9rem;
+    line-height: 2.5rem;
+}
+.admin{
+    position: absolute;
+    top: 0;
+    right: 0.4rem;
+    color: #fff;
+    display: block;
+    height: 2.8rem;
+    line-height: 2.5rem;
+
+}
+.admin span{
+   width: 2rem;
+   float: left;
+   font-size: 0.5rem;
+    overflow: hidden;
+
+}
+.admin i{
+    font-size:16px;
+    vertical-align: middle;
+    padding-left: 0.3rem;
+   margin-bottom: 0.3rem;
+   display: inline-block;
+}
+
+.seilct_list{
+    background: #fff;
+    padding: 30px 0;
+    margin-bottom: 0.6rem;
+
+}
+.seilct_list select{
+    width:90%;
+    height: 1.9rem;
+    line-height: 1.9rem; 
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ccc;
+    font-size:0.8rem;
+    color: #666;
+
+}
+.seilct_list select:nth-child(2){
+    margin-top: 0.6rem;
+}
+.btn_info{
+    padding: 0 0.6rem;
+    background: #fff;
+   
+}
+.h2{
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    color: #808080;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+}
+.btn_list{
+    font-size: 0;
+    box-sizing: border-box;
+    padding-bottom: 0.6rem;
+}
+.btn_list a{
+    background: #609df0;
+    width: 7.3rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin:0.6rem 0.6rem 0 0.6rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+
+}
+.btn_list a:hover{
+    background: #5990de;
+}
+
+.production .btn_list a{
+    width: 16.4rem;
+}
+.capacity{
+    background: #ff9900;
+    width: 16.4rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin:1.2rem 1.2rem 0 1.2rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.capacity:hover{
+    background: #f29100;
+}
+/**
+ * index end
+ */
