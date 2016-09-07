@@ -167,8 +167,8 @@ body {
 
 .bg {
     position: relative;
-    background: url(../images/loginbg.png)no-repeat;
-    background-size: cover;
+    background: url(../images/loginbg.png)no-repeat center;
+    background-size: 100% 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -247,8 +247,25 @@ body {
     background: #609df0;
     color: #fff;
 }
-
-
+.footer{
+	width: 7.5rem;
+	transform: translateX(-3.7rem);
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	text-align: center;
+	color: #808080;
+}
+.footer a{
+	font-size: 0.9rem;
+}
+.footer a:nth-child(1){
+	color: #4d4d4d;
+}
+.footer a:nth-child(2){
+	color: #999999;
+	text-decoration: underline;
+}
 /*login start*/
 
 
