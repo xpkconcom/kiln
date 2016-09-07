@@ -15,14 +15,7 @@
     <!-- 忽略Android平台中对邮箱地址的识别 -->
     <meta name="format-detection" content="email=no" />
     <link rel="stylesheet" type="text/css" href="../static/css/reset.css">
-    <script type="text/javascript">
-    (function() {
-        var b = document.documentElement;
-        var a = document.createElement("style");
-        a.innerHTML = "html { font-size: " + ((b.clientWidth > 640 ? 640 : b.clientWidth) / 18.75) + "px !important; }";
-        b.firstElementChild.appendChild(a)
-    })();
-    </script>
+    <script src="../static/js/lib/rem.js"></script>
 </head>
 
 <body class="body">
@@ -42,17 +35,9 @@
 </body>
 
 </html>
-<!-- <script src="../static/js/lib/rem.js"></script> -->
+
 <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 <script type="text/javascript">
 
-/*var $footer = $("#footer");
-$("#login_box input").on('focus', function() {
-    $footer.addClass('zindex');
-}).on('blur', function() {
-    clearTimeout(timer);
-    var timer = setTimeout(function () {
-        $footer.removeClass('zindex');
-    },50);
-});*/
+
 </script>
