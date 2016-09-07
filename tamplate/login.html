@@ -50,7 +50,8 @@ var $footer = $("#footer");
 $("#login_box input").on('focus', function() {
     $footer.addClass('zindex');
 }).on('blur', function() {
-    setTimeout(function () {
+    clearTimeout(timer);
+    var timer = setTimeout(function () {
         $footer.removeClass('zindex');
     },50);
 });
