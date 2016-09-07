@@ -266,6 +266,9 @@ body {
 	color: #999999;
 	text-decoration: underline;
 }
+.zindex{
+    z-index: -1;
+}
 /*login start*/
 
 
