@@ -650,6 +650,8 @@ body {
 .main_img{
     display: block;
     margin: 0 auto;
+    width: 100%;
+    padding-top: 1.2rem;
 }
 .perature_title{
     padding: 0 .6rem;
@@ -665,12 +667,12 @@ body {
 }
 .perature_title ul li span{
     display: block;
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.7rem;
+    height: 0.7rem;
     border-radius: 50%;
     font-size: 0.5rem;
     text-align: center;
-    line-height: .5rem;
+    line-height: .7rem;
     color: #333333;
     border: 1px solid #818181;
     margin: 0 auto;
@@ -702,7 +704,8 @@ body {
     border-radius: 0.5rem;
     font-size: 0.5rem;
     color: #fff;
-    padding: .1rem .5rem;
+    padding:.1rem .7rem; 
+    margin-right: .5rem;
 }
 .perature_info{
     background: #fff;
@@ -716,13 +719,13 @@ body {
 .preinfo_title span{
     padding-right: 1.0rem;
 }
-.perature_tab table{
+.pre_list{
     font-size: 0.6rem;
     color: #666;
     border: 1px solid #666;
     width: 100%;
 }
-.perature_tab table thead th{
+.pre_list thead th{
     font-size: 0.9rem;
     color: #333;
     border: 1px solid #666;
@@ -730,27 +733,72 @@ body {
     padding: 0.3rem 0; 
     font-weight: 400; 
 }
-.perature_tab table tbody th{
+.pre_list tbody th{
     border: 1px solid #ccc;
 }
-.perature_tab table tbody td{
+.pre_list tbody td{
     width: 0.4rem;
     border: 1px solid #ccc;
     text-align: center;
     padding: 0.3rem 0; 
 }
-.perature_tab table tbody td:nth-child(4),.perature_tab table tbody td:last-child,.perature_tab table tbody th{
+.pre_list tbody td:nth-child(4),.pre_list tbody td:last-child,.pre_list tbody th{
     border-right-color: #666;
 }
-.perature_tab table tbody th{
+.pre_list tbody th{
     border-left-color: #666;
 }
-.perature_tab table tbody tr:nth-child(even){
+.pre_list tbody tr:nth-child(even){
     background: #f2f2f2;
 }
-.perature_tab table tbody tr:last-child td,.perature_tab table tbody tr:last-child th{
+.pre_list tbody tr:last-child td,.pre_list tbody tr:last-child th{
     border-bottom-color: #666;
 }
 /**
  * perature.html 温度end
+ */
+.rotate_list {
+    width: 100%;
+    border: 1px solid #666;
+}
+
+.rotate_list  thead th{
+    font-size: 0.6rem;
+    color: #333;
+    padding: 0.4rem 0;
+    border: 1px solid #666;
+}
+.rotate_list tr:nth-child(even){
+     background: #f2f2f2;
+}
+
+.rotate_list  tbody td,.rotate_list  tbody th{
+    font-size: 0.6rem;
+    color: #50da95;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    text-align: center;
+    padding: 0.4rem 0;
+}
+.rotate_list  tbody th{
+    color: #666;
+}
+.iconjian{
+    width: 0.6rem;
+    height: 0.5rem;
+    background: url(../images/you.png)no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    display: block;
+    margin: 0 auto;
+}
+.zuo{
+     background: url(../images/zuo.png)no-repeat;
+     background-position: 0 0;
+     background-size: 100% 100%;
+}
+/**
+ * rotate.html 传动start
  */
