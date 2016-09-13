@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>login</title>
+    <title>产量能耗</title>
     <!-- 开启响应式 -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <!-- iphone设备中的safari私有meta标签,允许全屏模式浏览 -->
@@ -22,7 +22,7 @@
 <body class="body">
     <div class="viewport">
         <header class="nav">
-            窑炉远程监控系统
+            产量能耗
             <!-- <div class="admin"><span>admin</span><i class=" iconfont">&#xe600;</i>
             </div> -->
             <a href="login.html" class="admin">
@@ -35,44 +35,40 @@
                 <option>科达洁能</option>
                 <option>科达洁能</option>
                 <option>科达洁能</option>
-                <option>科达洁能</option>
+                <option>科达洁能</option> 
             </select>
-            <select>
-                <option>20150608</option>
-                <option>20150608</option>
-                <option>20150608</option>
-                <option>20150608</option>
-                <option>20150608</option>
-            </select>
+            <table class="yield_table">
+                <thead>
+                    <tr>
+                        <th>班次</th>
+                        <th>产量/㎡</th>
+                        <th>能耗/m³</th>
+                        <th>流量/m³</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>一班</th>
+                        <td>二班</td>
+                        <td>三班</td>
+                        <td>二班</td>
+                    </tr>
+                     <tr>
+                        <th>一班</th>
+                        <td>二班</td>
+                        <td>三班</td>
+                        <td>二班</td>
+                    </tr>
+                     <tr>
+                        <th>一班</th>
+                        <td>二班</td>
+                        <td>三班</td>
+                        <td>三班</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-        <section class="btn_info">
-            <div class="realtime">
-                <h2 class="h2">实时数据:</h2>
-                <div class="btn_list">
-                    <a href="perature.html">温度</a>
-                    <a href="fan.html">风机</a>
-                </div>
-                <div class="btn_list">
-                    <a href="javascript:;">传动</a>
-                    <a href="police.html">报警</a>
-                </div>
-            </div>
-            <div class="production">
-                <h2 class="h2">生产数据:</h2>
-                <div class="btn_list">
-                    <a href="yield.html">产量能耗</a>
-                    <a href="product.html">产品参数</a>
-                </div>
-            </div>
-            <div class="history">
-                <h2 class="h2">历史数据:</h2>
-                <div class="btn_list">
-                    <a href="temperature.html">温度趋势图</a>
-                    <a href="history.html">历史报警</a>
-                </div>
-            </div>
-        </section>
-        <a href="javascript:;" class="capacity">产能统计</a>
+     
     </div>
 </body>
 

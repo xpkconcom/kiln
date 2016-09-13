@@ -133,7 +133,8 @@ a {
 a:hover {
     text-decoration: none;
 }
-
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both; }
 html,
 body {
     width: 100%;
@@ -160,9 +161,8 @@ body {
 }
 
 .viewport {
-	height: 100%;
+    height: 100%;
     overflow-x: hidden;
-
 }
 
 .bg {
@@ -179,6 +179,7 @@ body {
         overflow-x: hidden;
     }
 }
+
 
 /*login start*/
 
@@ -249,31 +250,39 @@ body {
     background: #609df0;
     color: #fff;
 }
-.footer{
-	width: 7.5rem;
-	transform: translateX(-3.7rem);
-	position: relative;
-	top: 3rem;
-	left: 50%;
-	text-align: center;
-	color: #808080;
+
+.footer {
+    width: 7.5rem;
+    transform: translateX(-3.7rem);
+    position: relative;
+    top: 3rem;
+    left: 50%;
+    text-align: center;
+    color: #808080;
 }
-.footer a{
-	font-size: 0.9rem;
+
+.footer a {
+    font-size: 0.9rem;
 }
-.footer a:nth-child(1){
-	color: #4d4d4d;
+
+.footer a:nth-child(1) {
+    color: #4d4d4d;
 }
-.footer a:nth-child(2){
-	color: #999999;
-	text-decoration: underline;
+
+.footer a:nth-child(2) {
+    color: #999999;
+    text-decoration: underline;
 }
+
+
 /*login end*/
+
 
 /**
  * index start
  */
-.nav{
+
+.nav {
     height: 2.5rem;
     position: relative;
     color: #fff;
@@ -282,7 +291,8 @@ body {
     color: 0.9rem;
     line-height: 2.5rem;
 }
-.admin{
+
+.admin {
     position: absolute;
     top: 0;
     right: 0.4rem;
@@ -290,82 +300,84 @@ body {
     display: block;
     height: 2.8rem;
     line-height: 2.5rem;
-
 }
-.admin span{
-   width: 2rem;
-   float: left;
-   font-size: 0.5rem;
+
+.admin span {
+    width: 2rem;
+    float: left;
+    font-size: 0.5rem;
     overflow: hidden;
-
 }
-.admin i{
-    font-size:16px;
+
+.admin i {
+    font-size: 16px;
     vertical-align: middle;
     padding-left: 0.3rem;
-   margin-bottom: 0.3rem;
-   display: inline-block;
+    margin-bottom: 0.3rem;
+    display: inline-block;
 }
 
-.seilct_list{
+.seilct_list {
     background: #fff;
     padding: 30px 0;
     margin-bottom: 0.6rem;
-
 }
-.seilct_list select{
-    width:90%;
+
+.seilct_list select {
+    width: 90%;
     height: 1.9rem;
-    line-height: 1.9rem; 
+    line-height: 1.9rem;
     margin: 0 auto;
     display: block;
     border: 1px solid #ccc;
-    font-size:0.8rem;
+    font-size: 0.8rem;
     color: #666;
     background: #fff;
-
 }
-.seilct_list select:nth-child(2){
+
+.seilct_list select:nth-child(2) {
     margin-top: 0.6rem;
 }
-.btn_info{
+
+.btn_info {
     padding: 0 0.6rem;
     background: #fff;
-   
 }
-.h2{
+
+.h2 {
     padding: 0.6rem;
     font-size: 0.9rem;
     color: #808080;
     font-weight: normal;
     border-bottom: 1px solid #ccc;
 }
-.btn_list{
+
+.btn_list {
     font-size: 0;
     box-sizing: border-box;
     padding-bottom: 0.6rem;
+    display: -webkit-flex;
+    display: flex;
 }
-.btn_list a{
+
+.btn_list a {
     background: #609df0;
-    width: 7.3rem;
     height: 1.9rem;
     line-height: 1.9rem;
     text-align: center;
     color: #fff;
     display: inline-block;
-    margin:0.6rem 0.6rem 0 0.6rem;
+    margin: 0.6rem 0.6rem 0 0.6rem;
     border-radius: 5px;
     font-size: 0.9rem;
-
+    flex: 1;
 }
-.btn_list a:hover{
+
+.btn_list a:hover {
     background: #5990de;
 }
 
-.production .btn_list a{
-    width: 16.4rem;
-}
-.capacity{
+.capacity {
     background: #ff9900;
     width: 16.4rem;
     height: 1.9rem;
@@ -373,13 +385,372 @@ body {
     text-align: center;
     color: #fff;
     display: inline-block;
-    margin:1.2rem 1.2rem 0 1.2rem;
+    margin: 1.2rem 1.2rem 0 1.2rem;
     border-radius: 5px;
     font-size: 0.9rem;
 }
-.capacity:hover{
+
+.capacity:hover {
     background: #f29100;
 }
+
+
 /**
  * index end
+ */
+
+
+/**
+ * yield.html 产量能耗页面 start
+ */
+
+.yield_table {
+    width: 90%;
+    border: 1px solid #666;
+    margin: 0.6rem auto 0 auto;
+}
+
+.yield_table thead th,
+.yield_table td {
+    font-size: 0.7rem;
+    color: #333333;
+    text-align: center;
+    border: 1px solid #666;
+    width: 5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.yield_table tbody td {
+    color: #666;
+    font-size: 0.7rem;
+}
+
+.yield_table th {
+    color: #333333;
+    font-size: 0.7rem;
+    border: 1px solid #666;
+}
+
+
+/*
+.yield_table td {
+    color: #8c8c8c;
+}*/
+
+
+/**
+ * yield.html 产量能耗页面 end
+ */
+
+
+/**
+ * history.html历史报警页面 start
+ */
+
+.history_list {
+    padding: 0 0.9rem;
+    font-size: 0.7rem;
+    background: #fff;
+}
+
+.history_list p {
+    color: #333;
+}
+
+.history_list li {
+    padding-top: 0.6rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.history_list span {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: .5rem;
+    color: #666;
+    font-size: 0.5rem;
+}
+
+
+/**
+ * history.html历史报警页面 end
+ */
+
+
+/**
+ * product.html 产品参数页面 start
+ */
+
+.product_list {
+    padding: 0 0.6rem;
+    background: #fff;
+}
+
+.product_list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.7rem;
+    color: #333;
+}
+
+.product_list li span {
+    color: #666;
+}
+
+.ipx {
+    float: right;
+}
+
+
+/**
+ * product.html 产品参数页面 end
+ */
+
+
+/**
+ * temperature.html 温度趋势图 start
+ */
+
+.radio_list {
+    padding: 0 0.6rem;
+}
+
+.radio_list label {
+    display: block;
+    font-size: 0.8rem;
+    color: #333
+}
+
+.radio_list label input[type=text] {
+    width: 13.5rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    border: 1px solid #ccc;
+    font-size: 0.8rem;
+    color: #666;
+    background: #fff;
+    margin-left: .6rem;
+}
+
+.radio_list label select {
+    width: 13.5rem;
+    display: inline-block;
+    margin-left: .6rem;
+}
+
+
+/**
+ * temperature.html 温度趋势图 end
+ */
+
+
+/**
+ * fan.html 风机start
+ */
+
+.fan_box {
+    padding: 0 0.6rem;
+}
+
+.fan_title span {
+    padding: .6rem 0;
+    margin-right: 0.9rem;
+    color: #666;
+    font-size: 0.6rem;
+    display: inline-block;
+}
+
+.fan_box .fan_content li {
+    width: 50%;
+    float: left;
+    border: 1px solid #666;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.fan_box .fan_content li:nth-child(even) {
+   border-left: none;
+}
+
+.tab_title {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #333;
+    background: #fff;
+    border-bottom: 1px solid #666;
+}
+
+.fan_box table {
+    background: #f2f2f2;
+    width: 100%;
+    
+    border-collapse: collapse;
+}
+
+.fan_box thead th {
+    font-size: 0.6rem;
+    color: #666;
+    padding: .5rem 0;
+    max-width: 25%;
+    text-align: center;
+}
+
+.fan_box tbody th {
+    font-size: 0.6rem;
+    color: #666;
+    max-width: 25%;
+    border-top: 1px solid #ccc;
+}
+
+.fan_box tbody td {
+    font-size: 0.4rem;
+    color: #666;
+    max-width: 25%;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.greenicon {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #11cd6e;
+    display: block;
+    margin: 0 auto;
+}
+
+.fan_box th {
+    border-left: 1px solid #ccc;
+}
+
+.fan_box th:nth-child(1) {
+    border-left: none;
+}
+
+.fan_box td {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+
+/**
+ * fan.html 风机end
+ */
+
+
+/**
+ * perature.html 温度start
+ */
+.main_img{
+    display: block;
+    margin: 0 auto;
+}
+.perature_title{
+    padding: 0 .6rem;
+    background: #fff;
+}
+.perature_title ul{
+    display: flex;
+    padding: .3rem 0;
+
+}
+.perature_title ul li{
+    flex: 1;
+}
+.perature_title ul li span{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: .5rem;
+    color: #333333;
+    border: 1px solid #818181;
+    margin: 0 auto;
+}
+.perature_title ul li:nth-child(1) span{
+    float: left;
+}
+.perature_title ul li:nth-child(2) span{
+    float: left;
+}
+.perature_title ul li:nth-child(3) span{
+    float: left;
+}
+.perature_title ul li:last-child span{
+    float: right;
+}
+.perature_title ul li:nth-last-child(2) span{
+    float: right;
+}
+.perature_title ul li:nth-last-child(3) span{
+    float: right;
+}
+.perature_tab .switch_box{
+    text-align: right;
+    padding-bottom: .5rem;
+}
+.perature_tab .switch_box a{
+    background: #ff9900;
+    border-radius: 0.5rem;
+    font-size: 0.5rem;
+    color: #fff;
+    padding: .1rem .5rem;
+}
+.perature_info{
+    background: #fff;
+    padding: 0 .5rem ;
+}
+.preinfo_title{
+    font-size: 0.5rem;
+    color: #666;
+    padding: .5rem 0;
+}
+.preinfo_title span{
+    padding-right: 1.0rem;
+}
+.perature_tab table{
+    font-size: 0.6rem;
+    color: #666;
+    border: 1px solid #666;
+    width: 100%;
+}
+.perature_tab table thead th{
+    font-size: 0.9rem;
+    color: #333;
+    border: 1px solid #666;
+    width: 0.4rem;
+    padding: 0.3rem 0; 
+    font-weight: 400; 
+}
+.perature_tab table tbody th{
+    border: 1px solid #ccc;
+}
+.perature_tab table tbody td{
+    width: 0.4rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 0.3rem 0; 
+}
+.perature_tab table tbody td:nth-child(4),.perature_tab table tbody td:last-child,.perature_tab table tbody th{
+    border-right-color: #666;
+}
+.perature_tab table tbody th{
+    border-left-color: #666;
+}
+.perature_tab table tbody tr:nth-child(even){
+    background: #f2f2f2;
+}
+.perature_tab table tbody tr:last-child td,.perature_tab table tbody tr:last-child th{
+    border-bottom-color: #666;
+}
+/**
+ * perature.html 温度end
  */
