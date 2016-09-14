@@ -63,9 +63,9 @@
         </section>
         <section class="perature_tab">
             <div class="switch_box">
-                <a href="javascript:;">图标切换</a>
+                <a href="javascript:;" id="rotateswtch">图标切换</a>
             </div>
-            <div class="perature_info">
+            <div class="perature_info" id="rotate_info">
                 <div class="preinfo_title">
                     <span>PV单位 : Hz</span><span>SV单位 : Hz</span><span>speed单位 : m/min</span>
                 </div>
@@ -180,11 +180,15 @@
                     </tbody>
                 </table>
             </div>
+            <div class="rotate_echart" id="rotate_echart"></div>
         </section>
     </div>
 </body>
 
 </html>
 <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="https://cdn.bootcss.com/echarts/3.2.3/echarts.js"></script>
+<script src="../static/js/lib/rotate.js"></script>
+
 <script type="text/javascript">
 </script>

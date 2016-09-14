@@ -706,9 +706,13 @@ body {
 .perature_title ul li:nth-last-child(3) span{
     float: right;
 }
+.perature_tab {
+    background: #fff;
+}
 .perature_tab .switch_box{
     text-align: right;
     padding-bottom: .5rem;
+    background: #f9f9fa;
 }
 .perature_tab .switch_box a{
     background: #ff9900;
@@ -815,7 +819,26 @@ body {
  */
 
 
+
+
 .echart_box{
     width: 100%;
     height: 500px;
+    display: none;
+}
+.rotate_echart{
+    width: 100%;
+    height: 500px;
+    display: none;
+}
+.yidechart{
+    width: 100%;
+    height: 500px;
+    background: #fff!important;
+    margin-top: 0.6rem;
+}
+.degree_echart{
+    width: 100%;
+    height: 500px;
+    margin-top: 0.6rem;
 }

@@ -63,9 +63,9 @@
         </section>
         <section class="perature_tab">
             <div class="switch_box">
-                <a href="javascript:;">图标切换</a>
+                <a href="javascript:;" id="btnSwitch">图标切换</a>
             </div>
-            <div class="perature_info">
+            <div class="perature_info" id="perature_info">
                 <div class="preinfo_title">
                     <span>PV单位:℃</span><span>SV单位:℃</span><span>MV单位:%</span>
                 </div>
@@ -241,55 +241,5 @@
 </html>
 <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 <script src="https://cdn.bootcss.com/echarts/3.2.3/echarts.js"></script>
-<script type="text/javascript">
-// 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('echart_box'));
-
-//指定图表的配置项和数据
-option = {
-    title: {
-        // text: '折线图堆叠'
-    },
-    tooltip: {
-        trigger: 'axis'
-    },
-    legend: {
-        data:['上层温控表','下层温控表']
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: {
-        type: 'category',
-        boundaryGap: false,
-        name: '温控表编号',
-        data: ['K2','K3','K4','K5','K6','K7','K8']
-    },
-    yAxis: {
-        type: 'value',
-        name: 'PV值'
-    },
-    series: [
-        {
-            name:'上层温控表',
-            type:'line',
-            // stack: '总量',
-            data:[120, 220, 290, 330, 90, 230, 210,1400]
-        },
-        {
-            name:'下层温控表',
-            type:'line',
-            // stack: '总量',
-            data:[120, 182, 191, 234, 290, 330, 310,1399]
-        }
-    ]
-};
-
-
-
-// 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
-</script>
+<script src="../static/js/lib/perature.js"></script>
+<!-- <script src="../static/js/lib/common.js"></script> -->
