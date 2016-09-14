@@ -23,6 +23,7 @@
     <div class="viewport">
         <header class="nav">
             温度
+            <a href="javascript:history.go(-1);" class="returnUpPage"></a>
             <a href="login.html" class="admin">
                 <span>adminnnn</span>
                 <i class="iconfont">&#xe600;</i>
@@ -71,7 +72,7 @@
                 <table class="pre_list">
                     <thead>
                         <th></th>
-                        <th  colspan="3">上层温控表</th>
+                        <th colspan="3">上层温控表</th>
                         <th colspan="3">下层温控表</th>
                     </thead>
                     <tbody>
@@ -92,7 +93,6 @@
                             <td></td>
                             <td>1009</td>
                             <td>1009</td>
-                            
                         </tr>
                         <tr>
                             <th>KV1</th>
@@ -157,7 +157,7 @@
                             <td>1009</td>
                             <td>1009</td>
                         </tr>
-                          <tr>
+                        <tr>
                             <th>KV1</th>
                             <td>1009</td>
                             <td>1009</td>
@@ -193,7 +193,7 @@
                             <td>1009</td>
                             <td>1009</td>
                         </tr>
-                          <tr>
+                        <tr>
                             <th>KV1</th>
                             <td>1009</td>
                             <td>1009</td>
@@ -232,11 +232,64 @@
                     </tbody>
                 </table>
             </div>
+            <div class="echart_box" id="echart_box">
+            </div>
         </section>
     </div>
 </body>
 
 </html>
 <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="http://cdn.bootcss.com/echarts/3.2.3/echarts.js"></script>
 <script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('echart_box'));
+
+//指定图表的配置项和数据
+option = {
+    title: {
+        // text: '折线图堆叠'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['上层温控表','下层温控表']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        name: '温控表编号',
+        data: ['K2','K3','K4','K5','K6','K7','K8']
+    },
+    yAxis: {
+        type: 'value',
+        name: 'PV值'
+    },
+    series: [
+        {
+            name:'上层温控表',
+            type:'line',
+            // stack: '总量',
+            data:[120, 220, 290, 330, 90, 230, 210,1400]
+        },
+        {
+            name:'下层温控表',
+            type:'line',
+            // stack: '总量',
+            data:[120, 182, 191, 234, 290, 330, 310,1399]
+        }
+    ]
+};
+
+
+
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
 </script>
