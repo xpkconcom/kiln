@@ -605,9 +605,9 @@ body {
 }
 
 .fan_box thead th {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: #666;
-    padding: .5rem 0;
+    padding: 0.3rem 0;
     max-width: 25%;
     text-align: center;
 }
@@ -620,10 +620,10 @@ body {
 }
 
 .fan_box tbody td {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     color: #666;
     max-width: 25%;
-    padding: .5rem 0;
+    padding: 0.3rem 0;
     text-align: center;
 }
 
