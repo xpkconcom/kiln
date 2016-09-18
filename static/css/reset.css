@@ -196,7 +196,6 @@ body {
 .login_box {
     width: 90%;
     margin: 2.3rem auto;
-    position: relative;
 }
 
 .login_box input {
@@ -212,7 +211,7 @@ body {
 
 .username {
     background: url(../images/icon_ren.png)no-repeat;
-    background-position: 0.4rem 0.7rem;
+    background-position: 0.4rem 0.8rem;
     background-size: 1rem 1rem;
 }
 
@@ -228,7 +227,7 @@ body {
 
 .password {
     background: url(../images/icon_password.png)no-repeat;
-    background-position: 0.4rem 0.7rem;
+    background-position: 0.4rem 0.8rem;
     background-size: 1rem 1rem;
     margin-top: 1.2rem;
 }
@@ -388,6 +387,7 @@ body {
     -ms-flex: 1;
         -webkit-box-flex: 1;
         -webkit-flex: 1;
+            box-flex: 1;
             flex: 1;
 }
 
@@ -403,7 +403,7 @@ body {
     text-align: center;
     color: #fff;
     display: inline-block;
-    margin: 1.2rem 1.2rem 0 1.2rem;
+    margin: 1.2rem;
     border-radius: 5px;
     font-size: 0.9rem;
 }
@@ -588,6 +588,12 @@ body {
     border-bottom: none;
     box-sizing: border-box;
 }
+.fan_box .fan_content li:nth-last-child(1){
+    border-bottom:1px solid #666;
+}
+.fan_box .fan_content li:nth-last-child(2){
+    border-bottom:1px solid #666;
+}
 
 .fan_box .fan_content li:nth-child(even) {
    border-left: none;
@@ -737,7 +743,8 @@ body {
 }
 .perature_info{
     background: #fff;
-    padding: 0 .5rem ;
+    padding: .5rem;
+    padding-top: 0;
 }
 .preinfo_title{
     font-size: 0.5rem;
